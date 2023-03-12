@@ -1,0 +1,38 @@
+email:
+    host: smtp.qq.com
+    password: tcuovfdszkgpebga
+    port: 587
+    username: 1958387321@qq.com
+encryption:
+    md5secretkey: loveyu233..
+    tokensecretkey: 123456qwerty
+file:
+    imagemaxsize: 20
+    videomaxsize: 200
+jwt:
+    expiresat: 8
+log:
+    filename: ./logs/app.log
+    max-age: 30
+    max-backups: 60
+    max-size: 200
+    mode: dev
+mongodb:
+    dbname: ggv
+    host: 127.0.0.1
+    param: authSource=admin
+    password: password
+    port: 27017
+    username: username
+mysql:
+    dbname: ggv
+    host: 127.0.0.1
+    port: 3306
+    username: root
+redis:
+    host: 127.0.0.1
+    port: 6379
+    username: root
+server:
+    host: 127.0.0.1
+    port: 9898

@@ -1,0 +1,37 @@
+###添加评论
+POST {{local}}/comment/add
+Content-Type: application/json
+Authorization: Bearer {{auth}}
+
+{
+  "vid": 1,
+  "content": "测试评论"
+}
+
+###删除评论
+GET {{local}}/comment/delete?commentId=640b36a1ba93004ac76438c5
+#Authorization: Bearer {{auth}}
+
+###添加回复
+POST {{local}}/reply/add
+Content-Type: application/json
+Authorization: Bearer {{auth}}
+
+{
+  "vid":1,
+  "content":"回复 @root :测试",
+  "parentId":"640b3c5ded81119d88b833c6",
+  "replyUserId":1,
+  "replyContent":"回复 @root :测试",
+  "at":["root"]
+}
+
+###删除回复
+GET {{local}}/reply/delete?commentid=1&replyid=2
+Authorization: Bearer {{auth}}
+
+###获取评论信息
+GET {{local}}/comment/get?vid=1&page=1&pagesize=10
+
+###通过评论id获取评论信息
+GET {{local}}/comment/byid?commentid=1

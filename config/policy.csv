@@ -1,0 +1,29 @@
+p, user, /user/authcode, GET
+p, user, /user/byid, GET
+p, user, /user/login, POST
+p, user, /user/register, POST
+p, user, /user/resetpassword, POST
+p, user, /user/update, POST
+
+p, user, /upload/vide, POST
+
+p, user, /video/checjfalse, GET
+p, user, /video/get, GET
+p, user, /video/list, GET
+p, user, /video/search, GET
+p, user, /video/user, GET
+
+p, admin, /root/video/check, GET
+p, admin, /root/video/status, GET
+p, root, /root/video/check, GET
+p, root, /root/video/status, GET
+
+p, user, /comment/byid, GET
+p, user, /comment/delete, GET
+p, user, /comment/get, GET
+p, user, /comment/insert, GET
+p, user, /reply/add, GET
+p, user, /reply/delete, GET
+
+p, user, /captcha/get, GET
+p, user, /captcha/ver, GET

@@ -1,0 +1,23 @@
+###根据视频id获取视频信息
+GET {{local}}/video/get?vid=19
+
+###分页查询视频
+GET {{local}}/video/list?page=1&pagesize=2
+
+###关键字搜索视频
+GET {{local}}/video/search?search=测试&page=1&pagesize=2
+
+###通过用户id查询视频
+GET {{local}}/video/user?userid=2&page=1&pagesize=2
+
+###查询用户未过审视频
+GET {{local}}/video/status?page=1&pagesize=2
+Authorization: Bearer {{auth}}
+
+###分页查询所有未过审的视频需要root权限
+GET {{local}}/root/video/status?page=1&pagesize=2
+Authorization: Bearer {{auth}}
+
+###修改视频状态信息需要root权限
+GET {{local}}/root/video/check?vid=21&check=2
+Authorization: Bearer {{auth}}

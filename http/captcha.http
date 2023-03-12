@@ -1,0 +1,5 @@
+###获取滑块验证码
+GET {{local}}/captcha/get?email=1958387321@qq.com
+
+###验证滑块验证码
+GET {{local}}/captcha/ver?email=1958387321@qq.com&x=308

@@ -1,0 +1,141 @@
+host: http://127.0.0.1:9898
+info:
+  contact:
+    name: loveyu233
+  description: go-gin-videoSwaggerApi
+  title: go-gin-videoSwaggerApi
+  version: "1.0"
+paths:
+  /captcha/get:
+    get:
+      responses: {}
+      summary: 获取滑块验证码
+      tags:
+      - captcha
+  /captcha/ver:
+    get:
+      responses: {}
+      summary: 验证滑块验证码
+      tags:
+      - captcha
+  /comment/byid:
+    get:
+      responses: {}
+      summary: 通过评论id获取评论
+      tags:
+      - comment
+  /comment/delete:
+    get:
+      responses: {}
+      summary: 删除评论
+      tags:
+      - comment
+  /comment/get:
+    get:
+      responses: {}
+      summary: 获取评论信息
+      tags:
+      - comment
+  /comment/insert:
+    post:
+      responses: {}
+      summary: 添加评论
+      tags:
+      - comment
+  /reply/add:
+    post:
+      responses: {}
+      summary: 添加回复
+      tags:
+      - comment
+  /reply/delete:
+    get:
+      responses: {}
+      summary: 删除回复信息
+      tags:
+      - comment
+  /root/video/check:
+    get:
+      responses: {}
+      summary: 修改视频状态
+      tags:
+      - video
+  /root/video/status:
+    get:
+      responses: {}
+      summary: 查询用户所有未过审视频,用于root用户查询用来审核视频使用
+      tags:
+      - video
+  /upload/video:
+    post:
+      responses: {}
+      summary: 上传视频
+      tags:
+      - upload
+  /user/authcode:
+    get:
+      responses: {}
+      summary: 用户邮箱验证码发送
+      tags:
+      - user
+  /user/byid:
+    get:
+      responses: {}
+      summary: 通过userid获取用户信息
+      tags:
+      - user
+  /user/login:
+    post:
+      responses: {}
+      summary: 用户登录
+      tags:
+      - user
+  /user/register:
+    post:
+      responses: {}
+      summary: 用户注册
+      tags:
+      - user
+  /user/resetpassword:
+    post:
+      responses: {}
+      summary: 重置密码
+      tags:
+      - user
+  /user/update:
+    post:
+      responses: {}
+      summary: 修改用户信息
+      tags:
+      - user
+  /video/checkfalse:
+    get:
+      responses: {}
+      summary: 查询用户所有未过审视频,用于用于自己查询自己的视频
+      tags:
+      - video
+  /video/get:
+    get:
+      responses: {}
+      summary: 根据视频id获取视频信息
+      tags:
+      - video
+  /video/list:
+    get:
+      responses: {}
+      summary: 分页查询视频
+      tags:
+      - video
+  /video/search:
+    get:
+      responses: {}
+      summary: 关键字查询视频
+      tags:
+      - video
+  /video/user:
+    get:
+      responses: {}
+      summary: 通过用户id查询视频
+      tags:
+      - video
+swagger: "2.0"

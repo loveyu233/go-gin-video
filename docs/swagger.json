@@ -1,0 +1,212 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "go-gin-videoSwaggerApi",
+        "title": "go-gin-videoSwaggerApi",
+        "contact": {
+            "name": "loveyu233"
+        },
+        "version": "1.0"
+    },
+    "host": "http://127.0.0.1:9898",
+    "paths": {
+        "/captcha/get": {
+            "get": {
+                "tags": [
+                    "captcha"
+                ],
+                "summary": "获取滑块验证码",
+                "responses": {}
+            }
+        },
+        "/captcha/ver": {
+            "get": {
+                "tags": [
+                    "captcha"
+                ],
+                "summary": "验证滑块验证码",
+                "responses": {}
+            }
+        },
+        "/comment/byid": {
+            "get": {
+                "tags": [
+                    "comment"
+                ],
+                "summary": "通过评论id获取评论",
+                "responses": {}
+            }
+        },
+        "/comment/delete": {
+            "get": {
+                "tags": [
+                    "comment"
+                ],
+                "summary": "删除评论",
+                "responses": {}
+            }
+        },
+        "/comment/get": {
+            "get": {
+                "tags": [
+                    "comment"
+                ],
+                "summary": "获取评论信息",
+                "responses": {}
+            }
+        },
+        "/comment/insert": {
+            "post": {
+                "tags": [
+                    "comment"
+                ],
+                "summary": "添加评论",
+                "responses": {}
+            }
+        },
+        "/reply/add": {
+            "post": {
+                "tags": [
+                    "comment"
+                ],
+                "summary": "添加回复",
+                "responses": {}
+            }
+        },
+        "/reply/delete": {
+            "get": {
+                "tags": [
+                    "comment"
+                ],
+                "summary": "删除回复信息",
+                "responses": {}
+            }
+        },
+        "/root/video/check": {
+            "get": {
+                "tags": [
+                    "video"
+                ],
+                "summary": "修改视频状态",
+                "responses": {}
+            }
+        },
+        "/root/video/status": {
+            "get": {
+                "tags": [
+                    "video"
+                ],
+                "summary": "查询用户所有未过审视频,用于root用户查询用来审核视频使用",
+                "responses": {}
+            }
+        },
+        "/upload/video": {
+            "post": {
+                "tags": [
+                    "upload"
+                ],
+                "summary": "上传视频",
+                "responses": {}
+            }
+        },
+        "/user/authcode": {
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "用户邮箱验证码发送",
+                "responses": {}
+            }
+        },
+        "/user/byid": {
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "通过userid获取用户信息",
+                "responses": {}
+            }
+        },
+        "/user/login": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "用户登录",
+                "responses": {}
+            }
+        },
+        "/user/register": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "用户注册",
+                "responses": {}
+            }
+        },
+        "/user/resetpassword": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "重置密码",
+                "responses": {}
+            }
+        },
+        "/user/update": {
+            "post": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "修改用户信息",
+                "responses": {}
+            }
+        },
+        "/video/checkfalse": {
+            "get": {
+                "tags": [
+                    "video"
+                ],
+                "summary": "查询用户所有未过审视频,用于用于自己查询自己的视频",
+                "responses": {}
+            }
+        },
+        "/video/get": {
+            "get": {
+                "tags": [
+                    "video"
+                ],
+                "summary": "根据视频id获取视频信息",
+                "responses": {}
+            }
+        },
+        "/video/list": {
+            "get": {
+                "tags": [
+                    "video"
+                ],
+                "summary": "分页查询视频",
+                "responses": {}
+            }
+        },
+        "/video/search": {
+            "get": {
+                "tags": [
+                    "video"
+                ],
+                "summary": "关键字查询视频",
+                "responses": {}
+            }
+        },
+        "/video/user": {
+            "get": {
+                "tags": [
+                    "video"
+                ],
+                "summary": "通过用户id查询视频",
+                "responses": {}
+            }
+        }
+    }
+}

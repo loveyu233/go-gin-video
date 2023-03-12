@@ -1,0 +1,22 @@
+###上传视频
+POST {{local}}/upload/vide
+Authorization: Bearer asdsad
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="videoTitle"
+
+视频标题
+--WebAppBoundary
+Content-Disposition: form-data; name="videoIntroduction"
+
+视频简介
+--WebAppBoundary
+Content-Disposition: form-data; name="video"; filename="test.mp4"
+
+< /Users/huangzhenyu/Downloads/test.mp4
+--WebAppBoundary
+Content-Disposition: form-data; name="videoImage"; filename="k.jpg"
+
+< /Users/huangzhenyu/Downloads/k.jpg
+--WebAppBoundary

@@ -1,0 +1,35 @@
+###邮箱验证码
+GET {{local}}/user/authcode?email=1958387321@qq.com
+
+###账号注册
+POST {{local}}/user/register
+Content-Type: application/json
+
+{
+  "username": "root",
+  "password": "root",
+  "email": "1958387321@qq.com",
+  "emailCode": "837431"
+}
+
+###账号登录
+POST {{local}}/user/login
+Content-Type: application/json
+
+{
+  "username": "root",
+  "password": "root"
+}
+
+###账号密码重置
+POST {{local}}/user/resetpassword
+Content-Type: application/json
+
+{
+  "email": "1958387321@qq.com",
+  "emailCode": "580976",
+  "password": "root"
+}
+
+###通过userid获取用户信息
+GET {{local}}/user/byid?userid=1
