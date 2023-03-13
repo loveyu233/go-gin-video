@@ -18,6 +18,36 @@ paths:
       summary: 验证滑块验证码
       tags:
       - captcha
+  /collec/add:
+    get:
+      responses: {}
+      summary: 添加收藏该视频
+      tags:
+      - collec
+  /collec/count:
+    get:
+      responses: {}
+      summary: 统计该视频的收藏量
+      tags:
+      - collec
+  /collec/del:
+    get:
+      responses: {}
+      summary: 删除收藏该视频
+      tags:
+      - collec
+  /collec/is:
+    get:
+      responses: {}
+      summary: 判断用户是否收藏该视频
+      tags:
+      - collec
+  /collec/usercollec:
+    get:
+      responses: {}
+      summary: 获取用户收藏的视频
+      tags:
+      - collec
   /comment/byid:
     get:
       responses: {}
@@ -42,6 +72,72 @@ paths:
       summary: 添加评论
       tags:
       - comment
+  /follow/add:
+    get:
+      responses: {}
+      summary: 添加关注
+      tags:
+      - follow
+  /follow/del:
+    get:
+      responses: {}
+      summary: 取消关注
+      tags:
+      - follow
+  /follow/followmecount:
+    get:
+      responses: {}
+      summary: 查询被关注数量
+      tags:
+      - follow
+  /follow/followmeuser:
+    get:
+      responses: {}
+      summary: 查询被关注的用户
+      tags:
+      - follow
+  /follow/is:
+    get:
+      responses: {}
+      summary: 查询该是否关注了该用户
+      tags:
+      - follow
+  /follow/mefollowcount:
+    get:
+      responses: {}
+      summary: 查询关注数量
+      tags:
+      - follow
+  /follow/mefollowuser:
+    get:
+      responses: {}
+      summary: 查询被关注用户
+      tags:
+      - follow
+  /like/add:
+    get:
+      responses: {}
+      summary: 添加点赞
+      tags:
+      - like
+  /like/count:
+    get:
+      responses: {}
+      summary: 获取视频点赞个数
+      tags:
+      - like
+  /like/del:
+    get:
+      responses: {}
+      summary: 删除点赞
+      tags:
+      - like
+  /like/is:
+    get:
+      responses: {}
+      summary: 判断用户是否点赞该视频
+      tags:
+      - like
   /reply/add:
     post:
       responses: {}

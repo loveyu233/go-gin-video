@@ -27,3 +27,16 @@ p, user, /reply/delete, GET
 
 p, user, /captcha/get, GET
 p, user, /captcha/ver, GET
+
+p, user, /like/add, GET
+p, user, /like/del, GET
+p, user, /like/is, GET
+p, user, /like/count, GET
+
+p, user, /follow/is, GET
+p, user, /follow/add, GET
+p, user, /follow/del, GET
+p, user, /follow/followmeuser, GET
+p, user, /follow/mefollowcount, GET
+p, user, /follow/mefollowuser, GET
+p, user, /follow/followmecount, GET

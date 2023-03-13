@@ -15,7 +15,7 @@ import (
 type UserApi struct {
 }
 
-var userService = service.ServiceApp
+var userService = service.ServiceApp.UserServices
 
 // @Summary 用户登录
 // @Tags user

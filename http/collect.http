@@ -1,0 +1,18 @@
+###判断是否收藏该视频
+GET {{local}}/collec/is?vid=1
+Authorization: Bearer {{auth}}
+
+###收藏视频
+GET {{local}}/collec/add?vid=1
+Authorization: Bearer {{auth}}
+
+###取消收藏
+GET {{local}}/collec/del?vid=1
+Authorization: Bearer {{auth}}
+
+###视频收藏个数统计
+GET {{local}}/collec/count?vid=1
+
+###查询用户收藏视频
+GET {{local}}/collec/usercollec
+Authorization: Bearer {{auth}}

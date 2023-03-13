@@ -1,0 +1,26 @@
+###查询是否关注
+GET {{local}}/follow/is?uid=1
+Authorization: Bearer {{auth}}
+
+###关注
+GET {{local}}/follow/add?uid=1
+Authorization: Bearer {{auth}}
+
+###取消关注
+GET {{local}}/follow/del?uid=1
+Authorization: Bearer {{auth}}
+
+###查看被关注数
+GET {{local}}/follow/followmecount?uid=1
+
+###查看被关注的用户
+GET {{local}}/follow/followmeuser
+Authorization: Bearer {{auth}}
+
+###查看关注数
+GET {{local}}/follow/mefollowcount
+Authorization: Bearer {{auth}}
+
+###查看关注用户
+GET {{local}}/follow/mefollowuser
+Authorization: Bearer {{auth}}

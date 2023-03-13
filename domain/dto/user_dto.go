@@ -42,3 +42,17 @@ func UserModelToUserVo(userModel *model.User) *vo.UserVo {
 		UserBg:   userModel.UserBg,
 	}
 }
+
+func UserModelListToUserVoList(userModel []*model.User) []*vo.UserVo {
+	userVos := make([]*vo.UserVo, 0, len(userModel))
+
+	for i := range userModel {
+		userVos = append(userVos, &vo.UserVo{
+			Username: userModel[i].Username,
+			UserIcon: userModel[i].UserIcon,
+			Sing:     userModel[i].Sing,
+			UserBg:   userModel[i].UserBg,
+		})
+	}
+	return userVos
+}

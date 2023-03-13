@@ -49,16 +49,16 @@ type user struct {
 
 	ALL        field.Asterisk
 	UserID     field.Int32
-	Username   field.String // 用户名
-	Password   field.String // 密码
-	UserIcon   field.String // 用户头像
-	CreateTime field.Time   // 创建时间
-	DeleteTime field.String // 删除时间
-	UpdateTime field.Time   // 最近更新时间
-	Email      field.String // 电子邮件
-	Sing       field.String // 个性签名
-	Role       field.Int32  // 角色权限
-	UserBg     field.String // 用户主页背景
+	Username   field.String
+	Password   field.String
+	UserIcon   field.String
+	CreateTime field.Time
+	DeleteTime field.String
+	UpdateTime field.Time
+	Email      field.String
+	Sing       field.String
+	Role       field.Int32
+	UserBg     field.String
 
 	fieldMap map[string]field.Expr
 }

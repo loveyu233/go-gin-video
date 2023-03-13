@@ -34,7 +34,7 @@ func VideoModelToVideoVo(vm *model.Video) *vo.VideoVo {
 		VideoTitle:        vm.VideoTitle,
 		VideoIntroduction: vm.VideoIntroduction,
 		User:              userVo,
-		CreatTime:         vm.CreatTime,
+		CreatTime:         vm.CreateTime,
 	}
 }
 
@@ -47,7 +47,7 @@ func VideoModelListToVideoVoList(vs []*model.Video) []*vo.VideoVo {
 			Video:             "http://localhost:9898/static/video/" + vs[i].Video,
 			VideoTitle:        vs[i].VideoTitle,
 			VideoIntroduction: vs[i].VideoIntroduction,
-			CreatTime:         vs[i].CreatTime,
+			CreatTime:         vs[i].CreateTime,
 		})
 	}
 	return videVoList

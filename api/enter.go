@@ -10,6 +10,9 @@ type ApiGroup struct {
 	CommentApi
 	UploadApi
 	VideoApi
+	LikeApi
+	CollectApi
+	FollowApi
 }
 
 var ApiGroupApp *ApiGroup

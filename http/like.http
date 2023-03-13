@@ -1,0 +1,14 @@
+###获取是否点赞
+GET {{local}}/like/is?vid=1
+Authorization: Bearer {{auth}}
+
+###统计点赞个数
+GET {{local}}/like/count?vid=1
+
+###点赞
+GET {{local}}/like/add?vid=1
+Authorization: Bearer {{auth}}
+
+###取消点赞
+GET {{local}}/like/del?vid=1
+Authorization: Bearer {{auth}}

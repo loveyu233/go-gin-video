@@ -12,15 +12,15 @@ const TableNameVideo = "video"
 
 // Video mapped from table <video>
 type Video struct {
-	Vid               int32     `gorm:"column:vid;primaryKey;autoIncrement:true" json:"vid"`           // 视频id
-	VideoImage        string    `gorm:"column:video_image" json:"video_image"`                         // 视频封面地址
-	Video             string    `gorm:"column:video" json:"video"`                                     // 视频地址
-	VideoTitle        string    `gorm:"column:video_title" json:"video_title"`                         // 视频标题
-	VideoIntroduction string    `gorm:"column:Video_introduction" json:"Video_introduction"`           // 视频简介
-	UserID            int32     `gorm:"column:user_id" json:"user_id"`                                 // 视频作者id
-	CreatTime         time.Time `gorm:"column:creat_time;default:CURRENT_TIMESTAMP" json:"creat_time"` // 视频创建时间
+	Vid               int32     `gorm:"column:vid" json:"vid"`
+	VideoImage        string    `gorm:"column:video_image" json:"video_image"`
+	Video             string    `gorm:"column:video" json:"video"`
+	VideoTitle        string    `gorm:"column:video_title" json:"video_title"`
+	VideoIntroduction string    `gorm:"column:video_introduction" json:"video_introduction"`
+	UserID            int32     `gorm:"column:user_id" json:"user_id"`
+	CreateTime        time.Time `gorm:"column:create_time;not null;default:CURRENT_TIMESTAMP" json:"create_time"`
 	Ischeck           bool      `gorm:"column:ischeck" json:"ischeck"`
-	Isdelete          bool      `gorm:"column:isdelete" json:"isdelete"`
+	Isdelete          bool      `gorm:"column:isdelete;not null" json:"isdelete"`
 }
 
 // TableName Video's table name

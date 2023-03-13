@@ -28,6 +28,51 @@
                 "responses": {}
             }
         },
+        "/collec/add": {
+            "get": {
+                "tags": [
+                    "collec"
+                ],
+                "summary": "添加收藏该视频",
+                "responses": {}
+            }
+        },
+        "/collec/count": {
+            "get": {
+                "tags": [
+                    "collec"
+                ],
+                "summary": "统计该视频的收藏量",
+                "responses": {}
+            }
+        },
+        "/collec/del": {
+            "get": {
+                "tags": [
+                    "collec"
+                ],
+                "summary": "删除收藏该视频",
+                "responses": {}
+            }
+        },
+        "/collec/is": {
+            "get": {
+                "tags": [
+                    "collec"
+                ],
+                "summary": "判断用户是否收藏该视频",
+                "responses": {}
+            }
+        },
+        "/collec/usercollec": {
+            "get": {
+                "tags": [
+                    "collec"
+                ],
+                "summary": "获取用户收藏的视频",
+                "responses": {}
+            }
+        },
         "/comment/byid": {
             "get": {
                 "tags": [
@@ -61,6 +106,105 @@
                     "comment"
                 ],
                 "summary": "添加评论",
+                "responses": {}
+            }
+        },
+        "/follow/add": {
+            "get": {
+                "tags": [
+                    "follow"
+                ],
+                "summary": "添加关注",
+                "responses": {}
+            }
+        },
+        "/follow/del": {
+            "get": {
+                "tags": [
+                    "follow"
+                ],
+                "summary": "取消关注",
+                "responses": {}
+            }
+        },
+        "/follow/followmecount": {
+            "get": {
+                "tags": [
+                    "follow"
+                ],
+                "summary": "查询被关注数量",
+                "responses": {}
+            }
+        },
+        "/follow/followmeuser": {
+            "get": {
+                "tags": [
+                    "follow"
+                ],
+                "summary": "查询被关注的用户",
+                "responses": {}
+            }
+        },
+        "/follow/is": {
+            "get": {
+                "tags": [
+                    "follow"
+                ],
+                "summary": "查询该是否关注了该用户",
+                "responses": {}
+            }
+        },
+        "/follow/mefollowcount": {
+            "get": {
+                "tags": [
+                    "follow"
+                ],
+                "summary": "查询关注数量",
+                "responses": {}
+            }
+        },
+        "/follow/mefollowuser": {
+            "get": {
+                "tags": [
+                    "follow"
+                ],
+                "summary": "查询被关注用户",
+                "responses": {}
+            }
+        },
+        "/like/add": {
+            "get": {
+                "tags": [
+                    "like"
+                ],
+                "summary": "添加点赞",
+                "responses": {}
+            }
+        },
+        "/like/count": {
+            "get": {
+                "tags": [
+                    "like"
+                ],
+                "summary": "获取视频点赞个数",
+                "responses": {}
+            }
+        },
+        "/like/del": {
+            "get": {
+                "tags": [
+                    "like"
+                ],
+                "summary": "删除点赞",
+                "responses": {}
+            }
+        },
+        "/like/is": {
+            "get": {
+                "tags": [
+                    "like"
+                ],
+                "summary": "判断用户是否点赞该视频",
                 "responses": {}
             }
         },

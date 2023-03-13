@@ -6,6 +6,8 @@ type service struct {
 	UserServices
 	VideService
 	CommentService
+	CollectService
+	FollowService
 }
 
 var ServiceApp *service

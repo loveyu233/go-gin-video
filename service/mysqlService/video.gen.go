@@ -31,9 +31,9 @@ func newVideo(db *gorm.DB, opts ...gen.DOOption) video {
 	_video.VideoImage = field.NewString(tableName, "video_image")
 	_video.Video = field.NewString(tableName, "video")
 	_video.VideoTitle = field.NewString(tableName, "video_title")
-	_video.VideoIntroduction = field.NewString(tableName, "Video_introduction")
+	_video.VideoIntroduction = field.NewString(tableName, "video_introduction")
 	_video.UserID = field.NewInt32(tableName, "user_id")
-	_video.CreatTime = field.NewTime(tableName, "creat_time")
+	_video.CreateTime = field.NewTime(tableName, "create_time")
 	_video.Ischeck = field.NewBool(tableName, "ischeck")
 	_video.Isdelete = field.NewBool(tableName, "isdelete")
 
@@ -46,13 +46,13 @@ type video struct {
 	videoDo
 
 	ALL               field.Asterisk
-	Vid               field.Int32  // 视频id
-	VideoImage        field.String // 视频封面地址
-	Video             field.String // 视频地址
-	VideoTitle        field.String // 视频标题
-	VideoIntroduction field.String // 视频简介
-	UserID            field.Int32  // 视频作者id
-	CreatTime         field.Time   // 视频创建时间
+	Vid               field.Int32
+	VideoImage        field.String
+	Video             field.String
+	VideoTitle        field.String
+	VideoIntroduction field.String
+	UserID            field.Int32
+	CreateTime        field.Time
 	Ischeck           field.Bool
 	Isdelete          field.Bool
 
@@ -75,9 +75,9 @@ func (v *video) updateTableName(table string) *video {
 	v.VideoImage = field.NewString(table, "video_image")
 	v.Video = field.NewString(table, "video")
 	v.VideoTitle = field.NewString(table, "video_title")
-	v.VideoIntroduction = field.NewString(table, "Video_introduction")
+	v.VideoIntroduction = field.NewString(table, "video_introduction")
 	v.UserID = field.NewInt32(table, "user_id")
-	v.CreatTime = field.NewTime(table, "creat_time")
+	v.CreateTime = field.NewTime(table, "create_time")
 	v.Ischeck = field.NewBool(table, "ischeck")
 	v.Isdelete = field.NewBool(table, "isdelete")
 
@@ -101,9 +101,9 @@ func (v *video) fillFieldMap() {
 	v.fieldMap["video_image"] = v.VideoImage
 	v.fieldMap["video"] = v.Video
 	v.fieldMap["video_title"] = v.VideoTitle
-	v.fieldMap["Video_introduction"] = v.VideoIntroduction
+	v.fieldMap["video_introduction"] = v.VideoIntroduction
 	v.fieldMap["user_id"] = v.UserID
-	v.fieldMap["creat_time"] = v.CreatTime
+	v.fieldMap["create_time"] = v.CreateTime
 	v.fieldMap["ischeck"] = v.Ischeck
 	v.fieldMap["isdelete"] = v.Isdelete
 }

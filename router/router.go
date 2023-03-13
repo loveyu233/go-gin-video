@@ -45,4 +45,7 @@ func collectRouter(engine *gin.Engine) {
 	CaptchaRouter(engine)
 	UploadRouter(engine)
 	VideoRouter(engine)
+	LikeRouterInit(engine)
+	CollectRouterInit(engine)
+	FollowRouterInit(engine)
 }
